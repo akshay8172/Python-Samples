@@ -1,0 +1,32 @@
+class Animal: # Created a parent class, defined the method make_sound
+    def __init__(self, name):
+        self.name = name
+
+    def make_sound(self):
+        pass
+
+class Dog(Animal):
+    def make_sound(self):
+        return "Bow!"
+
+class Cat(Animal):
+    def make_sound(self):
+        return "Meow!"
+
+class Bird(Animal):
+    def make_sound(self):
+        return "Enta mone sugamano"
+
+# Function to print information about each animal
+def print_animal_info(animal):
+    print(f"{animal.name} says '{animal.make_sound()}'")
+
+# Creating instances of different animals
+dog = Dog("Pitbull")
+cat = Cat("Kingini")
+bird = Bird("Thathamma")
+
+# Printing information about each animal
+print_animal_info(dog)  
+print_animal_info(cat)  
+print_animal_info(bird) 
